@@ -3,40 +3,41 @@ layout: post
 title: "Organizing Angular"
 description: ""
 category: development
-tags: [trade, table, pattern, node, javascript]
+tags: [angular, js, ui, javascript]
 ---
 {% include JB/setup %}
 I'm currently working on a large enterprise level project that has a -massive- ui. After much discussion, we decided to break ground working with Angular (which came with it's own set of challenges). I guess I should mention that we're using [Brunch](http://brunch.io) with [Brunch on Asteroids](https://github.com/exlee/brunch-on-asteroids) to bootstrap the site. It's been a bit rough getting up to speed using this framework and deciding how to organize everything. After some debate, we decided to use the following organization for the app.
 
-	- app
-		- assets
-			- img
-		- partials
-			- jade-includes
-				* mixins.jade
-			* layout.jade
-			* foo.jade
-		- scripts
-			- controllers
-				* FooController.coffee
-			- directives
-				* FooDirective.coffee
-			- filters
-				* FooFilter.coffee
-			- repositories
-				* FooRepository.coffee
-			- services
-				* FooService.coffee
-		- styles
-			* app.less
-	- vendor
-		- js
-			* angular.min.js
-			* jquery.min.js
-		- styles
-			- bootstrap
-				* bootstrap.less
-
+{% highlight bash %}
+- app
+	- assets
+		- img
+	- partials
+		- jade-includes
+			* mixins.jade
+		* layout.jade
+		* foo.jade
+	- scripts
+		- controllers
+			* FooController.coffee
+		- directives
+			* FooDirective.coffee
+		- filters
+			* FooFilter.coffee
+		- repositories
+			* FooRepository.coffee
+		- services
+			* FooService.coffee
+	- styles
+		* app.less
+- vendor
+	- js
+		* angular.min.js
+		* jquery.min.js
+	- styles
+		- bootstrap
+			* bootstrap.less
+{% endhighlight %}
 
 There is, of course, more to it than that, but that's our basic skeleton.
 
