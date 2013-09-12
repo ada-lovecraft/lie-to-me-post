@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Organizing Angular"
-description: ""
+description: "Don't get hung up on the small things"
 category: development
 tags: [angular, js, ui, javascript]
 ---
